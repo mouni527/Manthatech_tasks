@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>
+    display google form
+        </title>
+        <style>
+            body{
+            background-color:skyblue;
+            }
+            .bodycontent{
+                border:3px; solid black;
+    
+
+            }
+            .reg{
+                padding:5px;
+                font-family:fantasy;
+                font-size:3px;
+            }
+            input[ type="text"],input[type="radio"],input[type="checkbox"]{
+                background-color: blue;
+                color:white;
+                border:3px solid green;
+                margin:2px;
+            }
+            .hi{
+            width:500px;
+            height:600px;
+            border:2px solid green;
+            margin-left:500px;
+            background-color: blanchedalmond;
+            }
+           label {
+                display:block;
+                margin:5px auto;
+            }
+            input[type="submit"]
+            {
+                margin-left: 60px;
+                margin-top: 20px;
+                display:inline-block;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+       <div class="hi">
+       <center><form action="registerform" getmethod="push" >
+    <table class="bodycontent">
+           
+            <h1>google form</h1>  </caption>
+            <tr>
+        <td><label for="name">enter name</label></td>
+       <td><input type ="text" id="name" name="name" placeholder="required"></input type></td>
+                </tr>
+                <tr>
+        <td><label for="name">enter rollno</label></td>
+        <td><input type ="text" id="roll" name="rno" ></input type></td>
+        </tr>
+        <tr>
+       <td> </input type><label for="email">enter mail</label></td>
+        <td><input type ="text" id="mail" name="mail"></input type></td>
+    </tr>
+    <tr>
+        <td><label for="name">enter password</label></td>
+       <td> <input type ="password" id="paassword" name="password"></input type></td>
+</tr>
+<tr>
+        <td><label for="name">enter phone</label></td>
+        <td><input type ="number" id="number" name="number"></input type></td>
+        </tr>
+        <tr>
+        <td><label for="name">enter age</label></td>
+        <td><input type ="age"  value="age" min="10",max="70"></input type></td>
+        </tr>
+        <tr>
+
+    <td><label for="courses" >courses</label></td>
+    <td><input type="radio" id="course" name="course" value="java"/>java<br/>
+        <input type="radio" id="course" name="course" value="python"/>python<br/>
+        <input type="radio" id="course" name="course" value="php"/>php<br/>
+        <input type="radio" id="course" name="course" value="c++"/>html<br/>
+        <input type="radio" id="course" name="course" value="DBMS"/>DBMS<br/>
+    </td>
+    </tr>
+    <tr>
+        <td><label for="languages" >languages</label></td>
+        <td><select id="languages" name="languages">
+            <option value="">--------choose--------</option>
+            <option value="telugu">telugu</option>
+            <option value="hindi">hindi</option>
+            <option value="english">english</option>
+            <option value="tamil">tamil</option>
+            <option value="kanada">kanada</option>
+        </td>
+        <tr>
+            <td><label for="grades">grades</label></td>
+    <td>
+            <input type="checkbox" id="course" name="course"value="java"/>java<br/>
+            <input type="checkbox" id="course" name="course"value="python"/>python<br/>
+            <input type="checkbox" id="course" name="course "value="php"/>php<br/>
+            <input type="checkbox" id="course" name="course "value="c++"/>html<br/>
+            <input type="checkbox" id="course" name="course "value="DBMS"/>DBMS<br/>
+
+
+</td>
+
+
+        </tr>
+       <tr>
+        <td>
+           <input type="submit"  style="align:right"   value="submit button">
+        </td>
+       </tr>
+   
+   
+
+</table>
+       </form> 
+    
+    </center>
+</div>
+    </body>
+</html>

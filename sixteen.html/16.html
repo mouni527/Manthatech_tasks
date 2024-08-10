@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>given task</title>
+    <style>
+        
+    
+        header {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+        }
+    
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+    
+    
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+    
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+    
+        main {
+          padding: 80px 20px 20px; 
+            text-align: center;
+        }
+    
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            padding:10px 0;
+            bottom:0px;
+        }
+    
+        img {
+            max-width: 40%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        .section {
+            display: none; 
+        }
+    
+        .section.active{
+            display: block; 
+        }
+        
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+    
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+    
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+           document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+           });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href=#home onclick ="showSection('home')">home</a></li>
+            <li><a href=#contact onclick ="showSection('contact')">contact</a></li>
+            <li><a href=#about onclick ="showSection('about')">about</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <div id="home" class="section">
+            <h1>this is my website</h1>
+            <p>A homepage (also called a home page) is a website’s main page that introduces the user to the business and what it has to offe</p>
+            <img src="https://res.cloudinary.com/da8vynlui/image/upload/v1722944122/temple_qqpiti.jpg">
+            <img src="https://res.cloudinary.com/da8vynlui/image/upload/v1722942193/cld-sample-4.jpg">
+        </div>
+        <div id="contact" class="section">
+            <h2>
+                this is related to contact details
+            </h2>
+            <p>
+                it tells total details of a person and Location
+                location : manthatech
+                adress:hyderabad
+
+            </p>
+        </div>
+        <div id="about" class="section">
+            <h3>
+                about us
+            </h3>
+            <p>
+                it tellas all about us what we do how do 
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                            <th>
+                                online  course trining
+                            </th>
+                        <th>description</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        python training
+                    </td>
+                    <td>learn the basics and  fundamentals</td>
+                </tr>
+
+                <tr><td>java training</td>
+                <td>learn the core concepts in java</td></tr>
+                <tr>
+                    <td>
+                        front end tarining
+                    </td>
+                    <td>
+                        learn the html and css
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        full stack training
+                    </td>
+                    <td>
+                        training both html,css,js
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        see all courses which course u interst u will join immediately
+    </footer>
+    <script>
+        function showSection(sectionId) {
+         document.querySelectorAll('.section').forEach(section => {
+               section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+        </script>
+</body>
+</html>
